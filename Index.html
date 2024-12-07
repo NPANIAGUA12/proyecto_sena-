@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Nelson Paniagua">
+    <meta name=" description" content="Pagina de gestor documental">
+    <meta name="keyword" content="HTML, CSS, bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Docuflow Gestor documental</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="style.css" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Contenedor de la barra de navegación -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a href="Index.html">
+                        <!--logo de la empresa-->
+                        <img src="Images/Logo2.png" alt="Logo" href="Index.html" width="130" height=""
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <!--Contenido de la barra de navegación-->
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <!--Incio -->
+                        <li class="nav-item">
+                            <a class="nav-link active " aria-current="page" href="Index.html">Inicio</a>
+                        </li>
+                        <!--Nosotros-->
+                        <li class="nav-item">
+                            <a class="nav-link " href="nosotros.html">Nosotros</a>
+                        </li>
+                        <!--Ingreso al Gestior Documental-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <!--Desplegable de servicios-->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="capacitacion.html">Capacitación</a></li>
+                                <li><a class="dropdown-item" href="asesoria.html">Asesoria</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="ingreso.html">Gestor documental</a></li>
+                            </ul>
+                        </li>
+                        <!--Contacto-->
+                        <li class="nav-item">
+                            <a class="nav-link " href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--sección hero-->
+        <section class="hero">
+            <!--Animación de slide-->
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <!--Imagen 1-->
+                <div class="carousel-inner">
+                    <div class="carousel-item ">
+                        <img src="Images/archivo electronico.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Digitalización y archivo electronico</h5>
+                            <p>Convierte tus documentos físicos en archivos digitales organizados y accesibles desde
+                                cualquier lugar.</p>
+                        </div>
+                    </div>
+                    <!--Imagen 2-->
+                    <div class="carousel-item active">
+                        <img src="Images/organizardocumentos.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Gestión de flujo de trabajo</h5>
+                            <p>Optimiza procesos documentales con soluciones automatizadas para aprobación,
+                                seguimiento y almacenamiento.</p>
+                        </div>
+                    </div>
+                    <!--Imagen 3-->
+                    <div class="carousel-item">
+                        <img src="Images/Recurso (12).png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Almacenamiento y custodia segura</h5>
+                            <p>Protege tus documentos físicos y digitales con medidas avanzadas de seguridad y
+                                cumplimiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <!--Descripción de aplicación general-->
+        <section class="descripcion">
+            <div class="logo-container me-4">
+                <img src="Images/logo oscuro.png" class="logo" alt="">
+            </div>
+            <div class="texto text-end">
+                <H2>Sistema de getión documental</H2>
+                <p> DOCUflow es una herramienta tecnológica diseñada para organizar,
+                    almacenar, proteger y facilitar el acceso a los documentos de una organización, tanto en formato
+                    físico como digital. Su objetivo principal es centralizar la información en un entorno seguro y
+                    accesible, permitiendo la digitalización, clasificación y búsqueda eficiente de archivos.
+
+                    Además, este tipo de software ofrece funcionalidades como el control de versiones, la gestión de
+                    permisos y roles de usuarios, y la integración con procesos empresariales, optimizando flujos de
+                    trabajo y garantizando el cumplimiento de normativas legales y estándares de seguridad. Esto lo
+                    convierte en una solución clave para mejorar la productividad, reducir costos asociados a la
+                    gestión de documentos físicos y minimizar el riesgo de pérdida de información.</p>
+            </div>
+            <!--Servicios-->
+        </section>
+        <!--Descripcion de la aplicación especifica-->
+        <section class="servicios seccion-clara">
+            <div class="container text-center">
+                <!--Titulo general de la sección-->
+                <p class="descripcion-servicios">Descubre cómo optimizar tu gestión documental y reducir la
+                    complejidad operativa con soluciones
+                    inteligentes y seguras.</p>
+                <h2 class="servicios-titulo-general">Que le podemos ofrecer</h2>
+                <div class="row gx-3">
+                    <!--Descripción 1-->
+                    <div class="columna col-md-4">
+                        <i class="bi bi-share-fill"></i>
+                        <p class="servicios-titulo">Organización </p>
+                        <p>La aplicación permite clasificar y gestionar documentos a través de una estructura
+                            jerárquica de carpetas o etiquetas. </p>
+                    </div>
+                    <!--Descripcion 2-->
+                    <div class="columna col-md-4">
+                        <i class="bi bi-files"></i>
+                        <p class="servicios-titulo">Control de versiones </p>
+                        <p> La herramienta incorpora un sistema de control de versiones que registra cada
+                            modificación realizada en los documentos.
+                        </p>
+                    </div>
+                    <!--Descripcion 3-->
+                    <div class="columna col-md-4">
+                        <i class="bi bi-file-lock2-fill"></i>
+                        <p class="servicios-titulo">Seguridad </p>
+                        <p> Priorizamos la protección de datos mediante medidas avanzadas como el cifrado
+                            de información, autenticación de usuarios y control de acceso por roles.
+                        </p>
+                    </div>
+                    <!--Boton contacto-->
+                    <div class="text-center mt-4">
+                        <a href="contacto.html" class="btn btn-primary">Contáctanos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Servicios-->
+        <section>
+            <div class="container">
+                <div class="bg-container">
+                    <div class="text-box text-center">
+                        <h2>SERVICIOS</h2>
+                        <p>Nos ocupamos de los aspectos de los servicios profesionales de TI.</p>
+                    </div>
+                    <!-- Columna para las tarjetas -->
+                    <div class="card-container">
+                        <div class="card">
+                            <img src="Images/capacitacion2.webp" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Capacitación</h5>
+                                <p class="card-text">Los servicios de DOCUflow se centran en preparar a su equipo
+                                    para
+                                    que tengan las habilidades necesarias para el uso de la aplicación.</p>
+                                <a href="capacitacion.html" class="btn btn-primary">Mas información</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Images/asesoramiento.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Asesoria</h5>
+                                <p class="card-text">Los expertos de DOCUflow le ayudamos a descubrir la forma más
+                                    sencilla de solucionar el inconveniente que tengas en tu empresa</p>
+                                <a href="asesoria.html" class="btn btn-primary">Mas información</a>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="Images/personalizacion.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Personalización</h5>
+                                <p class="card-text">Adaptamos el aplicativo DOCUflow para resolver cualquier
+                                    necedidad relacionada con gestión documental .</p>
+                                <a href="personalizacion.html" class="btn btn-primary">Mas información</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <!--Pie de pagina-->
+    <footer class="footer">
+        <div class="pie">
+            <div class="footer-top">
+                <!-- Logo de la empresa -->
+                <div class="footer-logo">
+                    <img src="Images/logo oscuro2.PNG" alt="Logo de la Empresa" class="logo-img">
+                </div>
+                <!-- Iconos de redes sociales -->
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <!-- Información de contacto -->
+                <ul class="contact-info">
+                    <li><i class="bi bi-telephone-fill"></i>Teléfono: 000-00-00</li>
+                    <li><i class="bi bi-whatsapp"></i> WhatsApp: +057 - 000-00-00</li>
+                    <li><i class="bi bi-geo-alt-fill"></i> Dirección: Cra 000 # 00-00, Cali - Colombia</li>
+                </ul>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 by Nelson Paniagua.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!--Bootstrap paquete jS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

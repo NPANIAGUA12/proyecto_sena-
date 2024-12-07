@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Nelson Paniagua">
+    <meta name=" description" content="Pagina de gestor documental">
+    <meta name="keyword" content="HTML, CSS, bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Docuflow Gestor documental</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Iconos de font awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="style.css" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Contenedor de la barra de navegación -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a href="Index.html">
+                        <!--logo de la empresa-->
+                        <img src="Images/Logo2.png" alt="Logo" href="Index.html" width="130" height=""
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <!--Contenido de la barra de navegación-->
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <!--Incio -->
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="Index.html">Inicio</a>
+                        </li>
+                        <!--Nosotros-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <!--Ingreso al Gestior Documental-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <!--Desplegable de servicios-->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="capacitacion.html">Capacitación</a></li>
+                                <li><a class="dropdown-item" href="asesoria.html">Asesoria</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="ingreso.html">Gestor documental</a></li>
+                            </ul>
+                        </li>
+                        <!--Contacto-->
+                        <li class="nav-item">
+                            <a class="nav-link active" href="contacto.html">Contacto</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!--hero-->
+        <div class="contacto">
+            <h1>Contacto</h1>
+        </div>
+        <section class="contacto-section">
+            <div class="container-contact mt-4">
+                <div class="row">
+                    <!-- Formulario de contacto (Izquierda) -->
+                    <div class="col-md-6 contacto-form" >
+                        <h4 class="title">Formulario de contacto</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Tu nombre">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" placeholder="Tu correo">
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono</label>
+                                <input type="text" class="form-control" id="telefono" placeholder="Tu teléfono">
+                            </div>
+                            <div class="mb-3">
+                                <label for="ciudad" class="form-label">Ciudad</label>
+                                <select class="form-select" id="ciudad">
+                                    <option selected>Selecciona tu ciudad</option>
+                                    <option value="1">Bogotá</option>
+                                    <option value="2">Medellín</option>
+                                    <option value="3">Cali</option>
+                                    <option value="4">Barranquilla</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="razon" class="form-label">Razón de contacto</label>
+                                <select class="form-select" id="razon">
+                                    <option selected>Selecciona una opción</option>
+                                    <option value="1">Consulta</option>
+                                    <option value="2">Soporte</option>
+                                    <option value="3">Cotización</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                    <!-- Datos de contacto (Derecha) -->
+                    <div class="col-md-5 contacto-info"">
+                        <h4>Datos de contacto</h4>
+                        <p><i class="bi bi-telephone"></i> <strong>Teléfono:</strong>  123-456-7890</p>
+                        <p><i class="bi bi-envelope"></i> <strong>Correo:</strong> Correo: contacto@ejemplo.com</p>
+                        <p><i class="bi bi-geo-alt"></i><strong>Dirección:</strong> Calle 123, Ciudad, Colombia</p>
+                        <p><i class="bi bi-clock"></i> <strong>Horario:</strong> Lunes a viernes, 9:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!--Pie de pagina-->
+    <footer class="footer">
+        <div class="pie">
+            <div class="footer-top">
+                <!-- Logo de la empresa -->
+                <div class="footer-logo">
+                    <img src="Images/logo oscuro2.PNG" alt="Logo de la Empresa" class="logo-img">
+                </div>
+                <!-- Iconos de redes sociales -->
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <!-- Información de contacto -->
+                <ul class="contact-info">
+                    <li><i class="bi bi-telephone-fill"></i>Teléfono: 000-00-00</li>
+                    <li><i class="bi bi-whatsapp"></i> WhatsApp: +057 - 000-00-00</li>
+                    <li><i class="bi bi-geo-alt-fill"></i> Dirección: Cra 000 # 00-00, Cali - Colombia</li>
+                </ul>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 by Nelson Paniagua.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!--Bootstrap paquete jS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+        </script>
+
+
+
+</body>
+
+</html>

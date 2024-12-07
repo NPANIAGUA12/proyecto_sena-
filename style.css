@@ -1,0 +1,889 @@
+/* Paleta de colores */
+:root {
+    --navegación: #62AADE;
+    --fondo: #6283de;
+    --fondo2: #acc9de;
+    --fondo3: #6862de;
+    --fondo4:#0a2132;
+    --texto1: #fffef5;
+    --texto2: #6268de;
+
+}
+/* Guia de la grid
+#contents {
+    display: grid;
+    grid-template-areas:
+        "hero"
+        "services"
+        "foot";
+}
+
+body {
+    margin: 0;
+}
+
+#contents>footer {
+    grid-area: foot;
+    background-color: blue;
+}
+*/
+
+/*CSS INDEX*/
+/*Barra de navegación*/
+.navbar {
+    padding: 2rem;
+    background-color: var(--navegación);
+    font-family: "Montserrat", serif;
+    font-size: 1.1rem;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-link {
+    color: white;
+}
+
+/*Sección hero - imagenes*/
+.carousel-item {
+    position: relative;
+    height: 500px;
+}
+
+.carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    font-family: "Montserrat", serif;
+}
+
+/* Información aplicación */
+.descripcion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Montserrat", serif;
+    background-color: #0a2132;
+    padding: 20px;
+}
+
+.descripcion .texto {
+    flex: 1;
+    text-align: right;
+    padding-left: 20px;
+}
+
+.descripcion .texto h2 {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.descripcion .texto p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: white;
+}
+
+
+.descripcion H2 {
+    color: var(--texto2);
+    font: bold;
+}
+
+/* Descripcion */
+
+
+.servicios {
+    padding: 30px 40px 60px 40px;
+}
+.servicios-titulo-general {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Montserrat", serif;
+    color: var(--texto2);
+}
+
+.descripcion-servicios {
+    font-size: 18px;
+    font-family: "Montserrat", serif;
+}
+
+.servicios-titulo {
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
+    
+}
+
+.servicios i {
+    font-size: 2.5rem;
+    color: white;
+    background-color: var(--fondo4);
+    padding: 9px 19px;
+    border-radius: 50%;
+}
+
+.servicios .columna {
+    flex: 1;
+    padding: 20px;
+    border: 2px solid var(--navegación);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5%;
+    margin: 1px;
+    transition: all 0.2s ease-in;
+    font-family: "Montserrat", serif;
+    
+}
+
+.servicios .columna:hover {
+    color: white;
+    background-color: var(--fondo);
+}
+
+.servicios .columna:hover .servicios-titulo {
+    color: white;
+}
+
+/* Estilo boton*/
+.btn-primary {
+    background-color: var(--fondo);
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    border: var(--navegación);
+    color: white;
+}
+
+.btn-primary:hover {
+    color: white;
+    background-color: var(--fondo4);
+}
+
+/*Servicios*/
+.bg-container {
+     background-color: var(--texto2);
+     padding: 20px;
+     border-radius:8px;
+     text-align: center;  
+     margin-bottom: 30px; 
+}
+
+.text-box {
+    margin-bottom: 20px;
+}
+
+.text-box h2 {
+    font-family: "Montserrat", serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.text-box p {
+    font-family: "Montserrat", serif;
+    font-size: 1.5rem;
+    color: white;
+
+}
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 18rem;
+    border: 1px solid var(--fondo);
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Efecto de ampliación al pasar el cursor */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.card-body {
+    font-family: "Montserrat", serif;
+}
+
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;    
+}
+
+/*Footer*/
+.footer {
+    background-color: var(--fondo4);
+    color: #fff;
+    padding: 20px 0;
+    font-family: "Montserrat", serif;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 0 30px;
+    border-bottom: 1px solid #444;
+}
+
+.footer-logo .logo-img {
+    height: 60px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 24px;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: var(--fondo3);
+}
+
+.footer-middle {
+    text-align: left;
+    margin-bottom: 20px;
+    padding: 0 30px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    padding-top: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+
+/*ccs SOBRE NOSOTROS*/
+
+.nosotros {
+    height: 150px;
+    padding: 40px;
+    background-color: var(--fondo4);
+    font-family: "Montserrat", serif;
+    color: white;
+    font-weight: bold;
+}
+
+/*Misión*/
+
+.mision-section {
+    padding: 40px;
+    margin: 20px 0;
+    font-family: "Montserrat", serif;
+}
+
+.section-title {
+    margin-left: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--texto2);
+}
+
+.section-text {
+    margin-left: 40px;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-right: 40px;
+}
+
+.mision-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+/*vision*/
+.vision-section {
+    padding: 40px;
+    margin: 20px 0;
+    font-family: "Montserrat", serif;
+    background-color: var(--fondo);
+}
+
+.vision-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5%;
+}
+
+.vision-section .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: var(--texto2);
+    text-align: right;
+    color:white;
+}
+
+
+.vision-section .section-text {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-right: 1px;
+    color: white;
+}
+
+/*Politicas*/
+/* Estilos generales para la sección */
+.politicas-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    color: var(--fondo);
+}
+
+/* Estilos para los ítems de las políticas */
+.politica-item {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #007bff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Efecto hover */
+.politica-item:hover {
+    background-color: #007bff;
+    color: #fff;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Estilos para el ícono */
+.politica-icon {
+    font-size: 24px;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+.politica-item:hover .politica-icon {
+    color: #fff;
+}
+
+/* Estilos para los títulos */
+.politica-item h4 {
+    font-family: "Montserrat", serif;
+    color: var(--fondo4);
+    font-family: "Montserrat", serif;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: inherit; /* Se adapta al color del hover */
+}
+
+/* Estilos para los párrafos */
+.politica-item p {
+    font-family: "Montserrat", serif;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 1.6;
+    color: inherit; /* Se adapta al color del hover */
+}
+
+/*Conoce nuestro equipo de trabajo
+//* Estilo para las tarjetas */
+
+.equipo-section .title {
+    padding: 30px;
+    text-align: center;
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    color: var(--fondo);
+
+    
+}
+
+.equipo-section .card img{
+    margin-top: 10px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.equipo-section .card {
+    width: 18rem;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: var(--fondo);
+    color: white;
+    margin-bottom: 40px;
+}
+
+.social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #f9f9f9;
+}
+
+.social-icons a:hover {
+    color: var(--fondo4);
+}
+
+.card-body {
+    flex: 1;
+}
+
+.card .card-title{
+    font-weight: bold;
+}
+
+/*Estilos capacitación*/
+/*seccion de texto*/
+.capacitacion {
+    height: 150px;
+    padding: 40px;
+    background-color: var(--fondo4);
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+.capacitacion-text {
+    font-family: "Montserrat", serif;
+    margin:50px 40px;
+
+}
+
+.capacitacion-title {
+    color: var(--texto2);
+    font-weight: bold;
+}
+.capacitacion-paragraph {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.capacitacion-section .contenedor {
+    max-width: 100%; 
+    padding: 15px;  
+}
+
+.capacitacion-section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Sección cursos*/
+
+.cursos-section {
+    background-color:var(--texto2);
+    padding: 40px;
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+.cursos-section .title {
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+
+.cursos-section .listaUno {
+    font-size: 1.2rem;
+    line-height:2.5 ;
+    
+}
+.cursos-section .listaDos {
+    margin-left: 100px;
+    font-size: 1.2rem;
+    line-height: 2.5;
+}
+
+.bi-check-circle-fill {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; 
+}
+
+.cursos-section li:hover {
+    color: #fff;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+/* seccion informacio de los cursos*/
+.infoCursos-section {
+    background-color: #f9f9f9;
+    padding: 40px;
+    font-family: "Montserrat", serif;
+    margin-bottom: 30px;
+   
+}
+
+.infoCursos-section .title {
+    margin-bottom: 30px;
+    color: var(--texto2);
+    font-weight: bold;
+    
+}
+
+.title-usuario {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: var(--texto2);
+    font-weight: bold;
+}
+.accordion {
+    box-shadow:
+    inset 0 -3em 3em rgba(0, 0, 0, 0.1),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--fondo4); /* Color del botón cuando está abierto */
+    color: white; /* Color del texto */
+    border-color: black /* Borde del botón */
+}
+
+.boton-information {
+    padding:10px;
+    text-align: right;     
+}
+
+.boton-information .btn {
+    margin-top: 30px;
+}
+
+/* Estilos asesoria*/
+.asesoria {
+    height: 150px;
+    padding: 40px;
+    background-color: var(--fondo4);
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+.asesoria-text {
+    font-family: "Montserrat", serif;
+    margin:50px 40px;
+
+}
+
+.asesoria-title {
+    color: var(--texto2);
+    font-weight: bold;
+}
+.asesoria-paragraph {
+    text-align: justify;
+    margin-top: 30px;
+}
+
+.asesoria-section .contenedor {
+    max-width: 100%; 
+    padding: 15px;  
+}
+
+.asesoria-section img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.auditoria {
+    font-family: "Montserrat", serif;
+    background-color:var(--texto2);
+    padding: 40px;
+    color: white;
+}
+
+.auditoria .title {
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.auditoria .listaUno {
+    font-size: 1.2rem;
+    line-height:2.5 ;
+    
+}
+.auditoria .listaDos {
+    margin-left: 100px;
+    font-size: 1.2rem;
+    line-height: 2.5;
+}
+
+.bi-check-circle-fill {
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle; 
+}
+
+.auditoria li:hover {
+    color: #fff;
+    transform: scale(1.08);
+    cursor: pointer;
+}
+
+/*Estilos contacto*/
+.contacto {
+    height: 150px;
+    padding: 40px;
+    background-color: var(--fondo4);
+    font-family: "Montserrat", serif;
+    color: white;
+}
+
+
+.contacto-section {
+    padding: 40px 0;
+    font-family: "Montserrat", serif;
+}
+
+.contacto-info {
+    background-color: var(--fondo);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: var(--fondo4);   
+}
+
+
+form h3 {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.contacto-form {
+    margin-right: 30px;
+}
+
+.contacto-info {
+    margin-left: 30px;
+}
+
+.container-contact {
+    background-color: #f9f9f9;
+    padding: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 5px;
+    box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.contacto-form .title {
+    font-weight: bold;
+    color: var(--fondo);
+    margin-bottom: 20px;  
+}
+
+.contacto-form input:hover, textarea:hover, select:hover {
+    border-color: var(--fondo4);
+}
+
+.contacto-info {
+    color: white;
+    line-height: 3;
+}
+
+.contacto-info h4{
+    margin-bottom: 30px;
+}
+
+
+.contacto-info p {
+    font-size: 16px;
+}
+
+/* estilos de ingreso a la aplicacon*/
+.ingreso .container {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:var(--navegación);
+}
+.logo {
+    flex: 1;
+    background: url('tu-logo.png') no-repeat center center;
+    background-size: cover;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4rem;
+    background-color: white;
+    border-radius: 5%;
+    margin-right: 8rem;
+    margin-bottom: 3rem;
+    font-family: "Montserrat", serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.377);
+
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color:#007BFF;
+    font-weight: bold;   
+}
+
+.form-group {
+    margin-bottom: 15px;
+    
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 2px solid #ccc;
+    
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.ingreso .btn-primary {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    border-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn-primary:hover {
+    background-color: var(--fondo4);
+    border-color: var(--fondo4);
+}
+
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links a {
+    margin: 0 10px;
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 14px;
+    
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+.ingreso {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logo img {
+    margin-top: 3rem;
+    padding: 6rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

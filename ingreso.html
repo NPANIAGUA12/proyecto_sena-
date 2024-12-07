@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Metadatos-->
+    <meta charset="UTF-8">
+    <meta name="author" content="Nelson Paniagua">
+    <meta name=" description" content="Pagina de gestor documental">
+    <meta name="keyword" content="HTML, CSS, bootstrap">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Docuflow Gestor documental</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Iconos de bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!--Estilos de CSS-->
+    <link rel="stylesheet" href="style.css" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!--Barra de navegación-->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--Contenedor de la barra de navegación -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a href="Index.html">
+                        <!--logo de la empresa-->
+                        <img src="Images/Logo2.png" alt="Logo" href="Index.html" width="130" height=""
+                            class="d-inline-block align-text-top">
+                    </a>
+                    <!--Contenido de la barra de navegación-->
+                    <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                        <!--Incio -->
+                        <li class="nav-item">
+                            <a class="nav-link  " aria-current="page" href="Index.html">Inicio</a>
+                        </li>
+                        <!--Nosotros-->
+                        <li class="nav-item">
+                            <a class="nav-link " href="nosotros.html">Nosotros</a>
+                        </li>
+                        <!--Ingreso al Gestior Documental-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Servicios
+                            </a>
+                            <!--Desplegable de servicios-->
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="capacitacion.html">Capacitación</a></li>
+                                <li><a class="dropdown-item" href="asesoria.html">Asesoria</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="ingreso.html">Gestor documental</a></li>
+                            </ul>
+                        </li>
+                        <!--Contacto-->
+                        <li class="nav-item">
+                            <a class="nav-link " href="contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="ingreso">
+            <div class="container">
+                <!-- Imagen del logo -->
+                <div class="logo">
+                    <img src="Images/Logo2.png" alt="imagen logo">
+                </div>
+    
+                <!-- Formulario de inicio de sesión -->
+                <div class="form-container">
+                    <h2>Iniciar sesión</h2>
+                    <form>
+                        <!-- Campo de Usuario -->
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Ingresa tu usuario" required>
+                        </div>
+    
+                        <!-- Campo de Contraseña -->
+                        <div class="form-group password-container">
+                            <input type="password" class="form-control" placeholder="Ingresa tu contraseña" required
+                                id="password">
+                            <i class="bi bi-eye" id="togglePassword"></i>
+                        </div>
+    
+                        <!-- Botón de acceso -->
+                        <button type="submit" class="btn btn-primary">Acceder</button>
+    
+                        <!-- Enlaces -->
+                        <div class="links">
+                            <a href="#">¿Presento algún problema?</a>
+                            <a href="#">¿Olvidó su contraseña?</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            </section>
+        </section>
+    </main>
+    <!--Pie de pagina-->
+    <footer class="footer">
+        <div class="pie">
+            <div class="footer-top">
+                <!-- Logo de la empresa -->
+                <div class="footer-logo">
+                    <img src="Images/logo oscuro2.PNG" alt="Logo de la Empresa" class="logo-img">
+                </div>
+                <!-- Iconos de redes sociales -->
+                <div class="footer-social">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="footer-middle">
+                <!-- Información de contacto -->
+                <ul class="contact-info">
+                    <li><i class="bi bi-telephone-fill"></i>Teléfono: 000-00-00</li>
+                    <li><i class="bi bi-whatsapp"></i> WhatsApp: +057 - 000-00-00</li>
+                    <li><i class="bi bi-geo-alt-fill"></i> Dirección: Cra 000 # 00-00, Cali - Colombia</li>
+                </ul>
+            </div>
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 by Nelson Paniagua.</p>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <!--Bootstrap paquete jS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
